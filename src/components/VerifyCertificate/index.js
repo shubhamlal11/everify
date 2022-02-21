@@ -25,6 +25,7 @@ export const VerifyCertificate = () => {
             }).then(function (contents) {
                 setResult(contents)
                 postMessage("Response from QR : ", contents)
+                console.log("Response from QR : ", contents)
             }).catch(err => {
                     setResult(data)
                 }
