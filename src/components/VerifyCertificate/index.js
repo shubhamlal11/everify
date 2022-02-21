@@ -24,6 +24,7 @@ export const VerifyCertificate = () => {
                 return contents.files[CERTIFICATE_FILE].async('text')
             }).then(function (contents) {
                 setResult(contents)
+                postMessage("Response from QR : ", contents)
             }).catch(err => {
                     setResult(data)
                 }
